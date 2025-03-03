@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evènement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: 'rgba(227, 225, 186, 1)',
+                        darkBrown: '#423c31',
+                        burgundy: '#5f1d1d',
+                        lightCream: '#e3e1ba',
+                        mediumBrown: '#ad9a84',
+                        copper: '#934c16',
+                        brightRed: '#bd3030',
+                        purple: '#6750a4',
+                        green: '#14ae5c'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[url('Styles/bg.png')] bg-cover  h-screen w-full">
+    <!-- Header -->
+    <header class="flex items-center justify-between w-full px-10 pr-[5%]">
+        <!-- Logo -->
+        <div class="w-[30%] flex justify-center">
+            <img src="Styles/lou.png" alt="Logo Quartz Events" class="h-40">
+        </div>
+
+
+
+        <button id="menu-btn" class="md:hidden text-red-700 text-3xl focus:outline-none">
+            ☰
+        </button>
+
+
+        <div class="w-[45%] hidden md:flex justify-center space-x-4 text-lg font-bold text-gray-800">
+
+            <div class="relative inline-block group">
+                <a href="#" class="hover:text-[#A67C52] transition">À propos</a>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white text-black p-2 shadow-lg rounded-md mt-1 z-50 w-80">
+                    QuartzEvents est une société à 100% Tunisienne, qui vise à vous aider à organiser vos évènements à
+                    la hauteur de vos standards.
+                </div>
+            </div>
+
+            <span>|</span>
+            <a href="evenement.html" class="hover:text-[#A67C52] transition">Évènements</a>
+            <span>|</span>
+            <a href="#footer" class="hover:text-[#A67C52] transition">Contact</a>
+        </div>
+        <div id="mobile-menu"
+            class="hidden flex flex-col items-center  shadow-md md:hidden transition-all overflow-hidden max-h-0">
+            <a href="#" class="py-2 w-full text-center hover:text-red-700">À propos</a>
+            <a href="evenement.html" class="py-2 w-full text-center hover:text-red-700">Évènements</a>
+            <a href="#footer" class="py-2 w-full text-center hover:text-red-700">Contact</a>
+        </div>
+        <div class="user-profile text-center ml-6 hidden md:block">
+            <a href="profil.html">
+                <img src="Styles/user.PNG" alt="Icône utilisateur"
+                    class="w-16 h-16 rounded-full object-cover border-2 border-[#A67C52] mb-2">
+                <span class="text-sm font-bold text-[#E3E1BA] bg-[#5F1D1D] p-1 rounded-full">Ali Ali</span>
+            </a>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- Lien retour accueil -->
+    <div class="container mx-auto px-6 mt-4">
+        <a href="#" class="text-burgundy hover:underline flex items-center">
+            &lt; Accueil
+        </a>
+    </div>
+    <div class="page-title mt-6 w-full bg-[#F8E6CE] py-2">
+        <h2 class="bg-[#F8E6CE] text-2xl font-bold text-center text-[#7e4742] md:text-4xl text-[#7e4742] text-center font-sans font-bold mb-12 "> Évènements organisés avec QuartzEvents</h2>
+    </div>
+    <!-- Section principale -->
+    <main class="container mx-auto px-6 py-8">
+        <!-- Titre de la section -->
+
+        
+        <!-- Timeline des événements -->
+        <div class="relative max-w-3xl mx-auto">
+            <!-- Ligne verticale de la timeline -->
+            <div class="absolute left-0 md:left-[86px] top-0 bottom-0 w-0.5 bg-copper"></div>
+
+            <!-- Liste des événements -->
+            <div class="space-y-12">
+                <!-- 7 Février -->
+                <div class="flex flex-col md:flex-row  ">
+                    
+                    <div class="flex flex-row md:flex-col items-center mb-4 md:mb-0 md:w-24 ">
+                        <div class="text-copper font-bold" >07 FEVRIER</div>
+                        <div class="absolute left-[-90px] md:left-[82px] w-6 h-6 rounded-full border-4 border-copper bg-cream"></div>
+                    </div>
+                    <div class="flex-1 space-y-4  " >
+                        <!-- Événement 1 -->
+                        <div class="bg-[#c7bb9e] rounded-lg p-5 shadow-sm">
+                            <div class="flex items-start">
+                                <div class="text-xl font-bold text-darkBrown w-20">17:00</div>
+                         
+                                <div class="flex-1 bg:[#c7bb9e]" >
+                                    <h3 class="text-xl text-burgundy font-medium">
+                                        |    Inauguration du salon Bloom Coiffure
+                                    </h3>
+                                    <div class="flex items-center mt-2 text-darkBrown">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                        <span>17 Avenue Habib Bourguiba</span>
+                                    </div>
+                                    <div class="flex flex-wrap gap-3 mt-3">
+                                        <span class="bg-purple text-white px-4 py-1 rounded-full text-sm">GRATUIT</span>
+                                        <span class="bg-green text-white px-4 py-1 rounded-full text-sm">SANS RÉSERVATION</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Événement 2 -->
+                        <div class="bg-[#c7bb9e] rounded-lg p-5 shadow-sm">
+                            <div class="flex items-start">
+                                <div class="text-xl font-bold text-darkBrown w-20">21:00</div>
+                               
+                                <div class="flex-1">
+                                    <h3 class="text-xl text-burgundy font-medium">
+                                        |    Soirée animée Grand Palace Hammamet
+                                    </h3>
+                                    <div class="flex items-center mt-2 text-darkBrown">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                        <span>Hôtel Grand Palace Hammamet</span>
+                                    </div>
+                                    <div class="flex flex-wrap gap-3 mt-3">
+                                        <span class="bg-purple text-white px-4 py-1 rounded-full text-sm">80/PER</span>
+                                        <span class="bg-green text-white px-4 py-1 rounded-full text-sm">AVEC RÉSERVATION</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 Février -->
+                <div class="flex flex-col md:flex-row">
+                    <div class="flex flex-row md:flex-col items-center mb-4 md:mb-0 md:w-24">
+                        <div class="text-copper font-bold flex ">08 FEVRIER</div>
+                        <div class="absolute left-[-9px] md:left-[82px] w-6 h-6 rounded-full border-4 border-copper bg-cream"></div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="bg-[#c7bb9e] rounded-lg p-5 shadow-sm">
+                            <div class="flex items-start">
+                                <div class="text-xl font-bold text-darkBrown w-20">14:00</div>
+                            
+                                <div class="flex-1">
+                                    <h3 class="text-xl text-burgundy font-medium">
+                                        |    Brunch rencontre célibataires avec Matchy
+                                    </h3>
+                                    <div class="flex items-center mt-2 text-darkBrown">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                        <span>Hôtel Grand Palace Tunis</span>
+                                    </div>
+                                    <div class="flex flex-wrap gap-3 mt-3">
+                                        <span class="bg-purple text-white px-4 py-1 rounded-full text-sm">25/PER</span>
+                                        <span class="bg-green text-white px-4 py-1 rounded-full text-sm">AVEC RÉSERVATION</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14 Février -->
+                <div class="flex flex-col md:flex-row">
+                    <div class="flex flex-row md:flex-col items-center mb-4 md:mb-0 md:w-24">
+                        <div class="text-copper font-bold">14 FEVRIER</div>
+                        <div class="absolute left-[25px] md:left-[82px] w-6 h-6 rounded-full border-4 border-copper bg-cream"></div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="bg-[#c7bb9e] rounded-lg p-5 shadow-sm">
+                            <div class="flex items-start">
+                                <div class="text-xl font-bold text-darkBrown w-20">17:00</div>
+                            
+                                <div class="flex-1">
+                                    <h3 class="text-xl text-burgundy font-medium">
+                                       |    Évènement Saint-Valentin avec Matchy
+                                    </h3>
+                                    <div class="flex items-center mt-2 text-darkBrown">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                        <span>Hôtel Grand Palace Tunis</span>
+                                    </div>
+                                    <div class="flex flex-wrap gap-3 mt-3">
+                                        <span class="bg-purple text-white px-4 py-1 rounded-full text-sm">25/PER</span>
+                                        <span class="bg-green text-white px-4 py-1 rounded-full text-sm">AVEC RÉSERVATION</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton Voir plus -->
+            <div class="flex justify-center mt-10">
+                <button class="bg-burgundy text-white px-8 py-2 rounded-full hover:bg-burgundy/90 transition-colors">
+                    Voir plus..
+                </button>
+            </div>
+        </div>
+    </main>
+
+  <!-- Bouton retour en haut -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button id="scrollToTopBtn" class="w-12 h-12 rounded-full bg-burgundy text-white flex items-center justify-center shadow-lg hover:bg-burgundy/90 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+</div>
+
+<script>
+    // Récupérer le bouton par son ID
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    // Ajouter un événement de clic au bouton
+    scrollToTopBtn.addEventListener('click', function() {
+        // Défilement vers le haut de la page en douceur
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Footer -->
+   <!-- Footer -->
+<!-- Footer -->
+<footer id="footer" class="bg-[#F5E6D3] py-8 w-full shadow-md rounded-lg">
+    <div class="relative flex justify-center mb-6">
+        <!-- Logo Quartz centré -->
+        <img src="Styles/lou.png" alt="Logo Quartz" class="h-16">
+        
+        <!-- Icône fl.png positionnée en bas à droite, visible sur md et plus -->
+        <div class="absolute right-0 bottom-0 hidden md:block">
+           
+        </div>
+    </div>
+    
+    
+    
+    <!-- Contenu du footer -->
+    <div class="w-full px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- À propos -->
+        <div class="text-center sm:text-left">
+            <h3 class="text-lg font-bold text-[#BD3030] mb-4">À propos</h3>
+           
+        </div>
+
+        <!-- Événements -->
+        <div class="text-center sm:text-left">
+            <h3 class="text-lg font-bold text-[#934c16] mb-4">Événements</h3>
+            <div class="grid grid-cols-2 gap-4 text-gray-700 text-sm">
+                <span>Anniversaire</span>
+                <span>Inauguration</span>
+                <span>Mariage</span>
+                <span>Fiançailles</span>
+                <span>Soirée</span>
+                <span>Concert</span>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="text-center sm:text-left">
+            <h3 class="text-lg font-bold text-[#934c16] mb-4">Contactez-nous</h3>
+
+
+
+            <div class="grid grid-cols-2 gap-3 text-gray-700 text-sm">
+                <div class="flex items-center space-x-2">
+                    <img src="Styles/facebook.png" class="h-5 w-5"> 
+                    <span>Quartz Events</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="Styles/whatsapp.png" class="h-5 w-5"> 
+                    <span>+216 98 888 888</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="Styles/instagram.png" class="h-5 w-5"> 
+                    <span>@quartz_events</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="Styles/email.png" class="h-5 w-5"> 
+                    <span>quartzevents@gmail.com</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="Styles/tiktok.png" class="h-5 w-5"> 
+                    <span>@quartz_events</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+   
+</footer>
+
+ 
+
+
+
+    
+    
+    
+
+
+
+
+
+<!-- Script JavaScript -->
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            menu.style.maxHeight = "300px"; // Afficher avec animation
+        } else {
+            menu.style.maxHeight = "0"; // Cacher avec animation
+            setTimeout(() => menu.classList.add("hidden"), 300); // Attendre la fin de l'animation
+        }
+    });
+</script>
+
+
+    <script>
+         
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            document.getElementById('confetti-container').appendChild(canvas);
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const confettiCount = 200;
+            const confettiArray = [];
+
+            class Confetti {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height - canvas.height;
+                    this.size = Math.random() * 5;
+                    this.speedY = Math.random();
+                    this.speedX = Math.random() * 2 - 1;
+                    const colorList = ['#a1763a', '#edb533', '#fefffc', '#f1efd6', '#ddbd59'];
+                    this.color = colorList[Math.floor(Math.random() * colorList.length)];
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+                update() {
+                    this.y += this.speedY;
+                    this.x += this.speedX;
+                    if (this.y > canvas.height) {
+                        this.y = -this.size;
+                    }
+                    this.draw();
+                }
+            }
+            function createConfetti() {
+                for (let i = 0; i < confettiCount; i++) {
+                    confettiArray.push(new Confetti());
+                }
+            }
+            function animateConfetti() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                confettiArray.forEach(confetti => confetti.update());
+                requestAnimationFrame(animateConfetti);
+            }
+            createConfetti();
+            animateConfetti();
+        });
+
+    </script>
+</body>
+</html>
