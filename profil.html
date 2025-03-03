@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartz Events - Mon profil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('Styles/bg.png')] bg-cover bg-center h-screen w-full">
+    <header class="flex items-center justify-between w-full px-10 pr-[5%]">
+        <!-- Logo -->
+        <div class="w-[30%] flex justify-center">
+            <img src="Styles/lou.png" alt="Logo Quartz Events" class="h-40">
+        </div>
+
+
+
+        <button id="menu-btn" class="md:hidden text-red-700 text-3xl focus:outline-none">
+            ☰
+        </button>
+
+
+        <div class="w-[45%] hidden md:flex justify-center space-x-4 text-lg font-bold text-gray-800">
+
+            <div class="relative inline-block group">
+                <a href="#" class="hover:text-[#A67C52] transition">À propos</a>
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white text-black p-2 shadow-lg rounded-md mt-1 z-50 w-80">
+                    QuartzEvents est une société à 100% Tunisienne, qui vise à vous aider à organiser vos évènements à
+                    la hauteur de vos standards.
+                </div>
+            </div>
+
+            <span>|</span>
+            <a href="evenement.html" class="hover:text-[#A67C52] transition">Évènements</a>
+            <span>|</span>
+            <a href="#footer" class="hover:text-[#A67C52] transition">Contact</a>
+        </div>
+        <div id="mobile-menu"
+            class="hidden flex flex-col items-center  shadow-md md:hidden transition-all overflow-hidden max-h-0">
+            <a href="#" class="py-2 w-full text-center hover:text-red-700">À propos</a>
+            <a href="evenement.html" class="py-2 w-full text-center hover:text-red-700">Évènements</a>
+            <a href="#footer" class="py-2 w-full text-center hover:text-red-700">Contact</a>
+        </div>
+        <div class="user-profile text-center ml-6 hidden md:block">
+            <a href="profil.html">
+                <img src="Styles/user.PNG" alt="Icône utilisateur"
+                    class="w-16 h-16 rounded-full object-cover border-2 border-[#A67C52] mb-2">
+                <span class="text-sm font-bold text-[#E3E1BA] bg-[#5F1D1D] p-1 rounded-full">Ali Ali</span>
+            </a>
+        </div>
+    </header>
+    <br><br>
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="scrollToTopBtn"
+            class="w-12 h-12 rounded-full bg-burgundy text-white flex items-center justify-center shadow-lg hover:bg-burgundy/90 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </button>
+    </div>
+    <div id="confetti-container" class="absolute top-0 left-0 w-full h-full pointer-events-none -z-10"></div>
+    <div class="page-title mt-6 w-full bg-[#F8E6CE] flex justify-center items-center p-8">
+        <h2 class="bg-[#F8E6CE] text-5xl font-bold text-center text-[#5F1D1D]">Votre profil</h2>
+    </div>
+    <main class="max-w-4xl mx-auto my-10  p-6 rounded-lg">
+        <a href="landing-connecté.html" class="text-[#97531e] font-bold text-lg">
+            < Accueil</a>
+                <section class="text-center">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="Styles/user.PNG" class="rounded-full w-40" alt="User Photo">
+
+                        <table class="border-separate border-spacing-y-6">
+                            <tr class="mb-8">
+                                <td class="text-right pr-5 h-10 font-bold text-[#5F1D1D]">Nom et prénom</td>
+                                <td
+                                    class="bg-[#f7f5ea] rounded-full w-[300px] h-[30px] pl-5 font-bold text-[#5F1D1D] text-left">
+                                    Ali Ali</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right pr-5 h-10 font-bold text-[#5F1D1D]">Email</td>
+                                <td
+                                    class="bg-[#f7f5ea] rounded-full w-[300px] h-[30px] pl-5 font-bold text-[#5F1D1D] text-left">
+                                    ali@ali.tn</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right pr-5 h-10 font-bold text-[#5F1D1D]">Numéro de téléphone</td>
+                                <td
+                                    class="bg-[#f7f5ea] rounded-full w-[300px] h-[30px] pl-5 font-bold text-[#5F1D1D] text-left">
+                                    +216 98 888 888</td>
+                            </tr>
+                        </table>
+
+                        <div class="flex space-x-4">
+                            <button
+                                class="bg-[#5F1D1D] text-[#E3E1BA] font-bold py-2 px-6 rounded-[50px] shadow-md hover:bg-[#C4B58A] transition duration-300">Modifier
+                                mes données</button>
+                            <button
+                                class="bg-[#5F1D1D] text-[#E3E1BA] font-bold py-2 px-6 rounded-[50px] shadow-md hover:bg-[#8B5E34] transition duration-300">Mon
+                                historique</button>
+                        </div>
+                </section>
+    </main>
+    <br>
+
+    <br><br>
+    <footer id="footer" class="bg-[#F5E6D3] py-8 w-full shadow-md rounded-lg pl-10 pr-10">
+        <div class="relative flex justify-center">
+            <img src="Styles/lou.png" alt="Logo Quartz" class="h-24 mb-10">
+            <div class="absolute right-0 bottom-0 hidden md:block">
+                <a href="#">
+                    <p bg-[]></p>
+                    <img src="Styles/fl.png" alt="Retour en haut de la page" style="width: 1.5cm; height: 1.5cm;">
+                </a>
+            </div>
+        </div>
+        <div class="w-full px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#BD3030] mb-4">À propos</h3>
+
+            </div>
+
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#934c16] mb-4">Évènements</h3>
+                <div class="grid grid-cols-2 gap-4 text-gray-700 text-sm">
+                    <span>Anniversaire</span>
+                    <span>Inauguration</span>
+                    <span>Mariage</span>
+                    <span>Fiançailles</span>
+                    <span>Soirée</span>
+                    <span>Concert</span>
+                </div>
+            </div>
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#934c16] mb-4">Contactez-nous</h3>
+
+
+
+                <div class="grid grid-cols-2 gap-3 text-gray-700 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/facebook.png" class="h-5 w-5">
+                        <span>Quartz Events</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/whatsapp.png" class="h-5 w-5">
+                        <span>+216 98 888 888</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/instagram.png" class="h-5 w-5">
+                        <span>@quartz_events</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/email.png" class="h-5 w-5">
+                        <span>quartzevents@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/tiktok.png" class="h-5 w-5">
+                        <span>@quartz_events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                menu.style.maxHeight = "300px";
+            } else {
+                menu.style.maxHeight = "0";
+                setTimeout(() => menu.classList.add("hidden"), 300);
+            }
+        });
+    </script>
+    
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            document.getElementById('confetti-container').appendChild(canvas);
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const confettiCount = 200;
+            const confettiArray = [];
+
+            class Confetti {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height - canvas.height;
+                    this.size = Math.random() * 5;
+                    this.speedY = Math.random();
+                    this.speedX = Math.random() * 2 - 1;
+                    const colorList = ['#a1763a', '#edb533', '#fefffc', '#f1efd6', '#ddbd59'];
+                    this.color = colorList[Math.floor(Math.random() * colorList.length)];
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+                update() {
+                    this.y += this.speedY;
+                    this.x += this.speedX;
+                    if (this.y > canvas.height) {
+                        this.y = -this.size;
+                    }
+                    this.draw();
+                }
+            }
+            function createConfetti() {
+                for (let i = 0; i < confettiCount; i++) {
+                    confettiArray.push(new Confetti());
+                }
+            }
+            function animateConfetti() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                confettiArray.forEach(confetti => confetti.update());
+                requestAnimationFrame(animateConfetti);
+            }
+            createConfetti();
+            animateConfetti();
+        });
+
+    </script>
+</body>
+
+</html>
