@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quartz Events</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-[url('Styles/bg.png')] bg-cover bg-center h-screen w-full">
     <header class="flex items-center justify-between w-full px-10 pr-[5%]">
         <!-- Logo -->
@@ -13,82 +15,72 @@
             <img src="Styles/lou.png" alt="Logo Quartz Events" class="h-40">
         </div>
 
-    
+
+
         <button id="menu-btn" class="md:hidden text-red-700 text-3xl focus:outline-none">
             ☰
         </button>
 
+
         <div class="w-[45%] hidden md:flex justify-center space-x-4 text-lg font-bold text-gray-800">
+
             <div class="relative inline-block group">
                 <a href="#" class="hover:text-[#A67C52] transition">À propos</a>
-                <div class="absolute left-0 hidden group-hover:block bg-white text-black p-2 shadow-lg rounded-md mt-1 z-50 w-80">
-                    QuartzEvents est une société à 100% Tunisienne, qui vise à vous aider à organiser vos évènements à la hauteur de vos standards.
+                <div
+                    class="absolute left-0 hidden group-hover:block bg-white text-black p-2 shadow-lg rounded-md mt-1 z-50 w-80">
+                    QuartzEvents est une société à 100% Tunisienne, qui vise à vous aider à organiser vos évènements à
+                    la hauteur de vos standards.
                 </div>
             </div>
+
             <span>|</span>
             <a href="evenement.html" class="hover:text-[#A67C52] transition">Évènements</a>
             <span>|</span>
             <a href="#footer" class="hover:text-[#A67C52] transition">Contact</a>
         </div>
-         
-    <div class="user-profile text-center ml-6 hidden md:block">
-        <a href="login.html" class="flex flex-col items-center">
-            <span class="block w-40 h-10 text-base font-bold pr-2 text-[#E3E1BA] bg-[#5F1D1D] p-1 rounded-full">Se connecter</span>
-        </a>
-    </div>
-        
-           
-        
-        
         <div id="mobile-menu"
-        class="hidden flex flex-col items-center shadow-md md:hidden transition-all overflow-hidden max-h-0">
-        <a href="#" class="py-2 w-full text-center hover:text-red-700">À propos</a>
-        <a href="evenement.html" class="py-2 w-full text-center hover:text-red-700">Évènements</a>
-        <a href="#footer" class="py-2 w-full text-center hover:text-red-700">Contact</a>
-        <a href="login.html" 
-            class="block w-40 h-10 flex items-center justify-center text-base font-bold text-[#E3E1BA] bg-[#5F1D1D] rounded-full mx-auto hover:bg-[#892222] transition-all">
-            Se connecter
-        </a>
+            class="hidden flex flex-col items-center  shadow-md md:hidden transition-all overflow-hidden max-h-0">
+            <a href="#" class="py-2 w-full text-center hover:text-red-700">À propos</a>
+            <a href="evenement.html" class="py-2 w-full text-center hover:text-red-700">Évènements</a>
+            <a href="#footer" class="py-2 w-full text-center hover:text-red-700">Contact</a>
         </div>
-    
-   
-   
-        
-        
-        
-        
-    
-      
+        <div class="user-profile text-center ml-6 hidden md:block">
+            <a href="profil.html">
+                <img src="Styles/user.PNG" alt="Icône utilisateur"
+                    class="w-16 h-16 rounded-full object-cover border-2 border-[#A67C52] mb-2">
+                <span class="text-sm font-bold text-[#E3E1BA] bg-[#5F1D1D] p-1 rounded-full">Ali Ali</span>
+            </a>
+        </div>
     </header>
     <section class="mt-7 relative w-full flex bg-[#F8E6CE]">
         <div class="flex-[3] flex items-center justify-center p-6">
             <h1 class="text-xl md:text-2xl font-bold text-[#423C31] text-left leading-tight">
-                TRANSFORMONS 
-                ENSEMBLE CHAQUE INSTANT 
+                TRANSFORMONS
+                ENSEMBLE CHAQUE INSTANT
                 EN UNE EXPÉRIENCE INOUBLIABLE.
             </h1>
         </div>
-        
-            <div class="flex-[7]">
+
+        <div class="flex-[7]">
             <img src="Styles/1.png" alt="Bannière" class="w-full h-64 object-cover">
         </div>
     </section>
-    
-        <div id="confetti-container" class="absolute top-0 left-0 w-full h-full pointer-events-none  -z-10"></div>
+
+    <div id="confetti-container" class="absolute top-0 left-0 w-full h-full pointer-events-none  -z-10"></div>
 
     <main class=" max-w-4xl mx-auto my-0  p-6 rounded-lg">
-       
-  
+
+
         <section class="  text-center ">
-            <a href="login.html">
+            <a href="addEvent.html">
                 <div class="bg-[#5F1D1D] p-4 rounded-full text-center w-auto max-w-[500px] mx-auto cursor-pointer">
                     <h2 class="text-2xl font-bold text-[#E3E1BA]">Créez votre événement personnalisé</h2>
                 </div>
             </a>
-            
-            
+
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
-               
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Anniversaire</p>
                     <button
@@ -97,8 +89,8 @@
                     </button>
                     <img src="Styles/2.png" alt="Anniversaire" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
-               
+
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Mariage</p>
                     <button
@@ -107,8 +99,8 @@
                     </button>
                     <img src="Styles/3.png" alt="Mariage" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
-              
+
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Bride To Be</p>
                     <button
@@ -117,8 +109,8 @@
                     </button>
                     <img src="Styles/4.png" alt="Bride To Be" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
-                
+
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Fiançailles</p>
                     <button
@@ -127,7 +119,7 @@
                     </button>
                     <img src="Styles/5.png" alt="Fiançailles" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Soirée</p>
                     <button
@@ -136,19 +128,19 @@
                     </button>
                     <img src="Styles/6.png" alt="Soirée" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
-                
+
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Inauguration</p>
-                  
+
                     <button
                         class="mt-2 text-sm text-[#423C31] bg-[#E0C29B] w-[90px] h-[30px] rounded-full shadow-md hover:bg-[#423C31] hover:text-white active:bg-[#9e2a2a] active:text-white mx-auto">
                         Consulter
                     </button>
                     <img src="Styles/7.png" alt="Inauguration" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
-              
+
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Lancement Produit</p>
                     <button
@@ -157,8 +149,8 @@
                     </button>
                     <img src="Styles/8.png" alt="Lancement Produit" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
-            
-               
+
+
                 <div class="bg-[#c7bb9f] p-4 rounded-lg shadow-md flex flex-col justify-between max-w-[350px] mx-auto">
                     <p class="font-bold text-[#934C16]">Remise de Diplômes</p>
                     <button
@@ -168,171 +160,180 @@
                     <img src="Styles/9.png" alt="Remise de Diplômes" class="w-full h-32 object-cover rounded-lg mt-2">
                 </div>
             </div>
-            
+
         </section>
-     
-   
-     </main>
-     <div class="mt-10 text-center max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-[1490px] h-auto bg-[#F5E6D3] mx-auto p-6 rounded-lg">
+
+
+    </main>
+    <div
+        class="mt-10 text-center max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-[1490px] h-auto bg-[#F5E6D3] mx-auto p-6 rounded-lg">
         <h2 class="text-xl sm:text-2xl font-bold text-[#934C16]">Personnalisez vos événements selon votre choix</h2>
         <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mt-6">
-          
+
             <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
-                <div class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
+                <div
+                    class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
                     <img src="Styles/11.png" alt="Traiteur" class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
                 </div>
                 <span class="mt-2 text-sm sm:text-base">Traiteur</span>
             </div>
-        
+
             <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
-                <div class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
+                <div
+                    class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
                     <img src="Styles/12.png" alt="Lieu" class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
                 </div>
                 <span class="mt-2 text-sm sm:text-base">Lieu</span>
             </div>
-        
+
             <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
-                <div class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
+                <div
+                    class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
                     <img src="Styles/13.png" alt="Musique" class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
                 </div>
                 <span class="mt-2 text-sm sm:text-base">Musique</span>
             </div>
-        
+
             <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
-                <div class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
+                <div
+                    class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
                     <img src="Styles/14.png" alt="Activités" class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
                 </div>
                 <span class="mt-2 text-sm sm:text-base">Activités</span>
             </div>
-        
+
             <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
-                <div class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
+                <div
+                    class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
                     <img src="Styles/15.png" alt="Thème" class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
                 </div>
                 <span class="mt-2 text-sm sm:text-base">Thème</span>
             </div>
-        
+
             <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
-                <div class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
+                <div
+                    class="bg-[#e9d7bf] p-4 rounded-full flex items-center justify-center w-[70px] h-[70px] sm:w-[80px] sm:h-[80px]">
                     <img src="Styles/16.png" alt="Budget" class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]">
                 </div>
                 <span class="mt-2 text-sm sm:text-base">Budget</span>
             </div>
         </div>
     </div>
-    
-        
-   
-   
-    
+
+
+
+
+
     <section class="flex justify-center mt-7">
         <div class="w-[99%] max-w-7xl bg-[#5F1D1D] rounded-[50px] shadow-lg overflow-hidden flex items-center h-56">
-          
-            <div class="flex-[3] flex items-center justify-center p-6">
-                <h1 class="text-xl md:text-2xl font-bold text-[#E3E1BA] text-left leading-tight">
-                    Consultez les évènements publics organisés avec QuartzEvents
-                </h1>
-            </div>
-    
-            <div class="flex-[7] h-full">
-                <img src="Styles/10.png" alt="Bannière" class="w-full h-full object-cover rounded-r-[50px]">
-            </div>
+            
+                <div class="flex-[3] flex items-center justify-center p-6">
+                    <a href="evenement.html">
+                    <h1 class="text-xl md:text-2xl font-bold text-[#E3E1BA] text-left leading-tight">
+                        Consultez les évènements publics organisés avec QuartzEvents
+                    </h1>
+                </a>
+                </div>
+
+                <div class="flex-[7] h-full">
+                    <img src="Styles/10.png" alt="Bannière" class="w-full h-full object-cover rounded-r-[50px]">
+                </div>
         </div>
     </section>
-    
-    
-   
-<footer id="footer" class="mt-12 bg-[#F5E6D3] py-1 w-full shadow-md rounded-lg">
-    <div class="relative flex justify-center mb-0">
-       
-        <img src="Styles/lou.png" alt="Logo Quartz" class="h-16">
-        
-      
-        <div class="absolute right-0 bottom-0 hidden md:block">
-            <a href="#">
-                <img src="Styles/fl.png" alt="Icône utilisateur" style="width: 1.5cm; height: 1.5cm;">
-            </a>
-        </div>
-    </div>
-    
-    
-    
-   
-    <div class="w-full px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      
-        <div class="text-center sm:text-left">
-            <h3 class="text-lg font-bold text-[#BD3030] mb-4">À propos</h3>
-           
-        </div>
 
-       
-        <div class="text-center sm:text-left">
-            <h3 class="text-lg font-bold text-[#934c16] mb-4">Événements</h3>
-            <div class="grid grid-cols-2 gap-4 text-gray-700 text-sm">
-                <span>Anniversaire</span>
-                <span>Inauguration</span>
-                <span>Mariage</span>
-                <span>Fiançailles</span>
-                <span>Soirée</span>
-                <span>Concert</span>
+
+
+    <footer id="footer" class="mt-12 bg-[#F5E6D3] py-1 w-full shadow-md rounded-lg">
+        <div class="relative flex justify-center mb-0">
+
+            <img src="Styles/lou.png" alt="Logo Quartz" class="h-16">
+
+
+            <div class="absolute right-0 bottom-0 hidden md:block">
+                <a href="#">
+                    <img src="Styles/fl.png" alt="Icône utilisateur" style="width: 1.5cm; height: 1.5cm;">
+                </a>
             </div>
         </div>
 
-    
-        <div class="text-center sm:text-left">
-            <h3 class="text-lg font-bold text-[#934c16] mb-4">Contactez-nous</h3>
 
 
 
-            <div class="grid grid-cols-2 gap-3 text-gray-700 text-sm">
-                <div class="flex items-center space-x-2">
-                    <img src="Styles/facebook.png" class="h-5 w-5"> 
-                    <span>Quartz Events</span>
+        <div class="w-full px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#BD3030] mb-4">À propos</h3>
+
+            </div>
+
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#934c16] mb-4">Événements</h3>
+                <div class="grid grid-cols-2 gap-4 text-gray-700 text-sm">
+                    <span>Anniversaire</span>
+                    <span>Inauguration</span>
+                    <span>Mariage</span>
+                    <span>Fiançailles</span>
+                    <span>Soirée</span>
+                    <span>Concert</span>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <img src="Styles/whatsapp.png" class="h-5 w-5"> 
-                    <span>+216 98 888 888</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <img src="Styles/instagram.png" class="h-5 w-5"> 
-                    <span>@quartz_events</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <img src="Styles/email.png" class="h-5 w-5"> 
-                    <span>quartzevents@gmail.com</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <img src="Styles/tiktok.png" class="h-5 w-5"> 
-                    <span>@quartz_events</span>
+            </div>
+
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#934c16] mb-4">Contactez-nous</h3>
+
+
+
+                <div class="grid grid-cols-2 gap-3 text-gray-700 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/facebook.png" class="h-5 w-5">
+                        <span>Quartz Events</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/whatsapp.png" class="h-5 w-5">
+                        <span>+216 98 888 888</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/instagram.png" class="h-5 w-5">
+                        <span>@quartz_events</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/email.png" class="h-5 w-5">
+                        <span>quartzevents@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/tiktok.png" class="h-5 w-5">
+                        <span>@quartz_events</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-   
-   
-</footer>
 
- 
-<script>
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("mobile-menu");
 
-    menuBtn.addEventListener("click", () => {
-        if (menu.classList.contains("hidden")) {
-            menu.classList.remove("hidden");
-            menu.style.maxHeight = "300px"; // Afficher avec animation
-        } else {
-            menu.style.maxHeight = "0"; // Cacher avec animation
-            setTimeout(() => menu.classList.add("hidden"), 300); // Attendre la fin de l'animation
-        }
-    });
-</script>
+    </footer>
 
 
     <script>
-         
-        document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                menu.style.maxHeight = "300px"; // Afficher avec animation
+            } else {
+                menu.style.maxHeight = "0"; // Cacher avec animation
+                setTimeout(() => menu.classList.add("hidden"), 300); // Attendre la fin de l'animation
+            }
+        });
+    </script>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
             document.getElementById('confetti-container').appendChild(canvas);
@@ -383,4 +384,5 @@
 
     </script>
 </body>
+
 </html>
