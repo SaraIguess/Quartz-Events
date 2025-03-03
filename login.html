@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartz Events - Connexion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('Styles/bg.png')] bg-cover bg-center h-screen w-full">
+    <header class="mt-20">
+        <div class="w-full bg-[#F8E6CE] flex justify-center">
+            <img src="Styles/lou.png" alt="Quartz Events" class="h-40">
+        </div>
+    </header>
+    <br><br>
+
+    <div id="confetti-container" class="absolute top-0 left-0 w-full h-full pointer-events-none -z-10"></div>
+
+    <main class="max-w-4xl mx-auto my-10  p-6 rounded-lg">
+        <a href="landing-déconnecté.html" class="text-[#97531e] font-bold text-lg">< Accueil</a>
+        <section class="text-center ">
+                <h1 class="text-3xl font-bold text-[#7a463e]">Connectez-vous à votre compte QuartzEvents</h1>
+                <form class="m-10">
+                    <input placeholder="Email ou numéro de téléphone" class="border border-[#7a463e] text-[#5f1d1d] font-bold rounded-full h-[40px] w-[450px] pl-[20px] mb-5">
+                    <input type="password" placeholder="Mot de passe" class="border border-[#7a463e] text-[#5f1d1d] font-bold rounded-full h-[40px] w-[450px] pl-[20px] mb-5"> <br>
+                    <a href="landing-connecté.html"><button type="button" class="bg-[#5F1D1D] text-[#E3E1BA] font-bold py-2 px-6 rounded-[50px] shadow-md hover:bg-[#C4B58A] transition duration-300">Se connecter</button></a>
+                    <p class="text-[#5f1d1d] text-lg mt-5">Vous n'avez pas de compte? <a href="signup.html" class="underline">Inscrivez-vous</a></p>
+                </form>
+        </section>
+
+
+    </main>
+    <br>
+
+    <br><br>
+    <footer class="bg-[#F5E6D3] py-8 w-full shadow-md rounded-lg pl-10 pr-10">
+        <div class="relative flex justify-center">
+            <img src="Styles/lou.png" alt="Logo Quartz" class="h-24 mb-10">
+            <div class="absolute right-0 bottom-0 hidden md:block">
+                <a href="#">
+                    <p bg-[]></p>
+                    <img src="Styles/fl.png" alt="Icône utilisateur" style="width: 1.5cm; height: 1.5cm;">
+                </a>
+            </div>
+        </div>
+        <div class="w-full px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#BD3030] mb-4">À propos</h3>
+
+            </div>
+
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#934c16] mb-4">Évènements</h3>
+                <div class="grid grid-cols-2 gap-4 text-gray-700 text-sm">
+                    <span>Anniversaire</span>
+                    <span>Inauguration</span>
+                    <span>Mariage</span>
+                    <span>Fiançailles</span>
+                    <span>Soirée</span>
+                    <span>Concert</span>
+                </div>
+            </div>
+
+            <div class="text-center sm:text-left">
+                <h3 class="text-lg font-bold text-[#934c16] mb-4">Contactez-nous</h3>
+
+
+
+                <div class="grid grid-cols-2 gap-3 text-gray-700 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/facebook.png" class="h-5 w-5">
+                        <span>Quartz Events</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/whatsapp.png" class="h-5 w-5">
+                        <span>+216 98 888 888</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/instagram.png" class="h-5 w-5">
+                        <span>@quartz_events</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/email.png" class="h-5 w-5">
+                        <span>quartzevents@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="Styles/tiktok.png" class="h-5 w-5">
+                        <span>@quartz_events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                menu.style.maxHeight = "300px";
+            } else {
+                menu.style.maxHeight = "0";
+                setTimeout(() => menu.classList.add("hidden"), 300);
+            }
+        });
+    </script>
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            document.getElementById('confetti-container').appendChild(canvas);
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const confettiCount = 200;
+            const confettiArray = [];
+
+            class Confetti {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height - canvas.height;
+                    this.size = Math.random() * 5;
+                    this.speedY = Math.random();
+                    this.speedX = Math.random() * 2 - 1;
+                    const colorList = ['#a1763a', '#edb533', '#fefffc', '#f1efd6', '#ddbd59'];
+                    this.color = colorList[Math.floor(Math.random() * colorList.length)];
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+                update() {
+                    this.y += this.speedY;
+                    this.x += this.speedX;
+                    if (this.y > canvas.height) {
+                        this.y = -this.size;
+                    }
+                    this.draw();
+                }
+            }
+            function createConfetti() {
+                for (let i = 0; i < confettiCount; i++) {
+                    confettiArray.push(new Confetti());
+                }
+            }
+            function animateConfetti() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                confettiArray.forEach(confetti => confetti.update());
+                requestAnimationFrame(animateConfetti);
+            }
+            createConfetti();
+            animateConfetti();
+        });
+
+    </script>
+</body>
+
+</html>
